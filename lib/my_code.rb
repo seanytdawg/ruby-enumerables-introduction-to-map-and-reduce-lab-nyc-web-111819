@@ -35,26 +35,23 @@ end
 
 def reduce_to_all_true(source_array)
 total = 0 
-source_array.each do |ele|
-  if ele == true 
+while total < source_array.length do 
+  return false if !source_array[total]
     total += 1 
-  end 
 end 
-  if total == source_array.length  
-return true 
-else 
-  return false 
+  return true
 end 
 
 def reduce_to_any_true(source_array)
 total = 0 
-source_array.each do |ele|
-  if ele == true 
-    total += 1 
-end 
-end 
-if total > 0 
-return true 
-else 
-  return false
+  source_array.each do |ele|
+    if ele == true 
+      total += 1 
+    end 
+  end 
+      if total > 0 
+        return true 
+      else 
+        return false
+      end
 end
