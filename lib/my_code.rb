@@ -44,7 +44,12 @@ end
 
 def reduce_to_any_true(source_array)
 total = 0 
-  source_array.each do |ele|
+  while total < source_array.length do 
+  return true if !source_array[total]
+    total += 1 
+end 
+  return true
+end 
     if ele == true 
       total += 1 
     end 
