@@ -48,15 +48,5 @@ total = 0
   return true if !source_array[total]
     total += 1 
 end 
-  return true
-end 
-    if ele == true 
-      total += 1 
-    end 
-  end 
-      if total > 0 
-        return true 
-      else 
-        return false
-      end
+  return false 
 end
