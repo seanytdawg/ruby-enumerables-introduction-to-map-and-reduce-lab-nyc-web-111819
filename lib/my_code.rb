@@ -42,16 +42,16 @@ end
   return true
 end 
 
-# def reduce_to_any_true(source_array)
-# total = 0 
-#   source_array.each do |ele|
-#     if ele == true 
-#       total += 1 
-#     end 
-#   end 
-#       if total > 0 
-#         return true 
-#       else 
-#         return false
-#       end
-# end
+def reduce_to_any_true(source_array)
+total = 0 
+  source_array.each do |ele|
+    if ele == true 
+      total += 1 
+    end 
+  end 
+      if total > 0 
+        return true 
+      else 
+        return false
+      end
+end
