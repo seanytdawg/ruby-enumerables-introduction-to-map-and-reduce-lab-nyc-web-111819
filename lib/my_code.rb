@@ -47,6 +47,6 @@ total = 0
   while total < source_array.length do 
   return true if !source_array[total]
     total += 1 
-end 
+  end 
   return false 
 end
